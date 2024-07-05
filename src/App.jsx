@@ -21,7 +21,7 @@ function App() {
           }))
         );
       });
-  });
+  }, []);
 
   const filterData = useMemo(() => {
     return data.filter((d) => min < d['연봉'] && d['연봉'] < max);
